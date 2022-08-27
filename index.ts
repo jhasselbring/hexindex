@@ -1,7 +1,4 @@
-"use strict";
-exports.__esModule = true;
-exports.getHex = exports.getIndex = void 0;
-var indexToHex = {
+const indexToHex = {
     '0': '0',
     '1': '1',
     '2': '2',
@@ -17,9 +14,9 @@ var indexToHex = {
     '12': 'c',
     '13': 'd',
     '14': 'e',
-    '15': 'f'
-};
-var hexToIndex = {
+    '15': 'f',
+}
+const hexToIndex = {
     '0': '0',
     '1': '1',
     '2': '2',
@@ -35,13 +32,12 @@ var hexToIndex = {
     'c': '12',
     'd': '13',
     'e': '14',
-    'f': '15'
-};
-var getIndex = function (hex) {
+    'f': '15',
+}
+
+export const getIndex = hex => {
     return hexToIndex[hex];
-};
-exports.getIndex = getIndex;
-var getHex = function (index) {
+}
+export const getHex = index => {
     return indexToHex[index];
-};
-exports.getHex = getHex;
+}
